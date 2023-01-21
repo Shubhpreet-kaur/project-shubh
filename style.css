@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.box{
+    margin-top: 360px;
+    text-align: center;
+}
+.box1{
+    color: white;
+    font-weight: bolder;
+    font-size: 1.3em;
+    height: 50px;
+    width: 150px;
+    border: none;
+    overflow: hidden;
+    background-color:red;
+   box-shadow: 5px 5px 7px 0px #0000003f;
+   position: relative;
+   z-index: 1;
+}
+.box1::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    transition: 0.8s;
+    height: 100%;
+    width: 0%;
+    z-index: -1;
+
+}
+.box1:hover::before{
+    width: 100%;
+}
